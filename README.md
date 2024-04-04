@@ -33,12 +33,14 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
 Developed by: Saravanan C
 
 RegisterNumber: 212222110041
-*/
+
+
+
 
 ## Full Adder
 ```
@@ -70,6 +72,8 @@ endmodule
 ![Screenshot 2024-03-22 143255](https://github.com/Yogesh-Yogi-1/FULL_ADDER_SUBTRACTOR/assets/148514598/939151e8-c37b-49aa-8f44-513492ba509e)
 
 ![Screenshot 2024-03-22 143433](https://github.com/Yogesh-Yogi-1/FULL_ADDER_SUBTRACTOR/assets/148514598/aa118976-fe63-40e9-a31c-cec66367d805)
+
+
 
 **Output Timing Waveform**
 
