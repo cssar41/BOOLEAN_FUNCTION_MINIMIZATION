@@ -58,13 +58,12 @@ endmodule
 # RTL realization: 
 # Output:
 ![image](https://github.com/arbasil05/BOOLEAN_FUNCTION_MINIMIZATION/assets/144218037/4a6e9bd9-5695-4f96-950c-4ae31b658b37)
+# Timing Diagram
+![image](https://github.com/arbasil05/BOOLEAN_FUNCTION_MINIMIZATION/assets/144218037/32d59bc2-f97d-46ff-be90-f60320dd58f7)
 # Time table :
 ![image](https://github.com/arbasil05/BOOLEAN_FUNCTION_MINIMIZATION/assets/144218037/6a835e49-2975-4542-8414-2b4d40bb0d3d)
 ![image](https://github.com/arbasil05/BOOLEAN_FUNCTION_MINIMIZATION/assets/144218037/b6a0a739-f5f5-45e2-9162-a3b298eaf2fd)
-# Timing Diagram
 
-
-![image](https://github.com/arbasil05/BOOLEAN_FUNCTION_MINIMIZATION/assets/144218037/32d59bc2-f97d-46ff-be90-f60320dd58f7)
 **Result:**
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
