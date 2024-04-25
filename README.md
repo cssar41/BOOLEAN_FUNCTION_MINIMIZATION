@@ -14,11 +14,11 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Software – Quartus prime**
 
-**Theory**
+# Theory:
+ A combinational circuit is a circuit in which the output depends on the present combination of inputs. Combinational circuits are made up of logic gates. The output of each logic gate is determined by its logic function. Combinational circuits can be made using various logic gates, such as AND gates, OR gates, and NOT gates.
 
-**Logic Diagram**
 
-**Procedure**
+# Procedure
 
 1.	Type the program in Quartus software.
 
@@ -31,56 +31,46 @@ Hardware – PCs, Cyclone II , USB flasher
 5.	For different input combinations generate the timing diagram.
 
 
-**Program:**
-
-Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-
+# Program:
+```
 Developed by: Saravanan C
-
 RegisterNumber: 212222110041
 
-
-
-
-## Full Adder
-```
-module fulladder(a,b,cin,sum,carry);
-input a,b,cin;
-output sum,carry;
-wire w1,w2,w3,w4;       
-xor(w1,a,b);
-xor(sum,w1,cin);        
-
-and(w2,a,b);
-and(w3,b,cin);
-and(w4,cin,a);
-
-or(carry,w2,w3,w4);
+module Boolean_min(A,B,C,D,W,X,Y,Z,F1,F2);
+input A,B,C,D,W,X,Y,Z;
+wire x1,x2,x3,x4,x5,x6,x7,x8,x9,x10;
+output F1,F2;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign x6=(X)&(~Y)&(Z);
+assign x7=(~X)&(~Y)&(Z);
+assign x8=(~W)&(X)&(Y);
+assign x9=(W)&(~X)&(Y);
+assign x10=(W)&(X)&(Y);
+assign F1=x1|x2|x3|x4|x5;
+assign F2=x6|x7|x8|x9|x10;
 endmodule
+
 ```
-## Full Subtractor
-```
-module fullsub(a,b,Bin,BO,DIFF);
-input a,b,Bin;
-output BO,DIFF;
-assign DIFF = a ^ b ^ Bin;
-  assign BO = (a & b) | ((a ^ b) & Bin);
-endmodule
-```
-**RTL Schematic**
 
-![Screenshot 2024-03-22 143255](https://github.com/Yogesh-Yogi-1/FULL_ADDER_SUBTRACTOR/assets/148514598/939151e8-c37b-49aa-8f44-513492ba509e)
-
-![Screenshot 2024-03-22 143433](https://github.com/Yogesh-Yogi-1/FULL_ADDER_SUBTRACTOR/assets/148514598/aa118976-fe63-40e9-a31c-cec66367d805)
+# RTL realization: 
 
 
+# Output:
+![image](https://github.com/arbasil05/BOOLEAN_FUNCTION_MINIMIZATION/assets/144218037/4a6e9bd9-5695-4f96-950c-4ae31b658b37)
 
-**Output Timing Waveform**
+# Time table :
+![image](https://github.com/arbasil05/BOOLEAN_FUNCTION_MINIMIZATION/assets/144218037/6a835e49-2975-4542-8414-2b4d40bb0d3d)
+![image](https://github.com/arbasil05/BOOLEAN_FUNCTION_MINIMIZATION/assets/144218037/b6a0a739-f5f5-45e2-9162-a3b298eaf2fd)
 
-![Screenshot 2024-03-18 090939](https://github.com/Yogesh-Yogi-1/FULL_ADDER_SUBTRACTOR/assets/148514598/fe08e008-070e-4e8b-bee9-f26ade621c0e)
+# Timing Diagram
+![image](https://github.com/arbasil05/BOOLEAN_FUNCTION_MINIMIZATION/assets/144218037/32d59bc2-f97d-46ff-be90-f60320dd58f7)
 
-![Screenshot 2024-03-18 092119](https://github.com/Yogesh-Yogi-1/FULL_ADDER_SUBTRACTOR/assets/148514598/c37c43ae-514e-4fda-82d9-22ed613851e0)
 
 **Result:**
 
-Thus the Full Adder and Full Subtractor circuits are designed and the truth tables is verified using Quartus software.
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
+
